@@ -1,0 +1,24 @@
+#corpotest {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+summary {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: #0b5c5c;
+    padding: 20px 20px;
+    border: 2px #0b5c5c solid;
+    border-radius: 5px;
+    margin: 20px 20px;
+}
+
+details {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    padding: 20px 20px;
+    border: 2px #0b5c5c00 solid;
+    border-radius: 5px;
+    margin: 20px 20px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>TheLibreria.it | La tua libreria online</title>
+    <!-- FILE CSS -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="media/immagini/favicon.png">
+    <script type="text/javascript" src="funzioni.js"></script>
+</head>
+
+<body style="padding: 0; margin:0">
+    <div id="corpo">
+        <div id="header" style="position:sticky; top:0;">
+            <img src="media/immagini/logo.png">
+            <ul id="menu">
+                <li><a class="login" href="index.html">Home</a></li>
+                <li><a href="#">Collezione</a></li>
+                <li><a href="#">Contatti</a></li>
+                <li><a class="home" href="index.html">Esci</a></li>
+
+            </ul>
+        </div>
+        
+    
+        <!-- <h1>Benvenuto su TheLibreria.it</h1> -->
+        <p class="introduzione">
+            <img src="media/immagini/mondadori.png">
+            <br>
+            <br>
+            Benvenuto, all'interno della tua collezione di libri, quì potrai leggere i libri selezionati e rimuovere quelli già letti
+            <br>
+            Ora puoi iniziare a sfogliare i libri che hai precedentemente aggiunto alla tua collezione
+        </p>
+
+        <form id="login-form" action="libreria.html" method="POST">
+            <img src="media/immagini/account.png" width="80px" height="80px">
+            <br>
+            <span data-tooltip="Inserisci il tuo nome utente o email" data-flow="left"><input type="text" name="username-field" id="username-field" class="login-form-field" placeholder="Username/Email"></span>
+            <span data-tooltip="Digita la password del tuo account" data-flow="left"><input type="password" id="password-field" class="login-form-field" placeholder="Password"></span>
+            <span data-tooltip="Dobbiamo ricordarci di te?" data-flow="left"><input type="checkbox" id="accetto" class="login-form-field" style="font-size: 10px">Ricorda l'accesso</span>
+            <br><a href="#" style="font-size: 12px">Hai perso la password? clicca quì</a>
+            <input type="submit" id="login-form-submit" onClick="alert('Login effettuato! Benvenuto, Admin');">
+            <br>
+            <button id="puliscitutto">RIPRISTINA PAGINA UTENTE</button>
+        </form>
+<!-- 
+            <script>
+                $(document).ready(function(){
+                    if(localStorage.getItem("inputvalue")){
+                    $('.login').text(localStorage.getItem("inputvalue"));
+                    $('.home').text(localStorage.getItem("inputvalue"));
+                }
+                
+                $('#login-form-submit').on('click', function() {
+                    localStorage.setItem("inputvalue", $('#username-field').val());
+                    $('.login').text(localStorage.getItem("inputvalue"));
+                    $('.home').text(localStorage.getItem("inputvalue"));
+                });
+
+                $('#pulisci').on('click', function() {
+                    localStorage.removeItem("inputvalue");
+                });
+
+                $('#puliscitutto').on('click', function() {
+                    localStorage.clear();
+                });       
+            });
+            </script> -->
+
+        
+        <!-- FOOTER | PIE DI PAGINA E COPYRIGHT DISCLAIMER-->
+        <div id="footer">
+            <p style="text-align: center; padding-top: 15px; font-family: 'Montserrat';">COPYRIGHT &#169 2022 | <a href="#" style="text-decoration: none; color: #fff; font-weight: bolder;">TheLibreria.it</a> | All rights reserved</p>
+        </div>
+    </div>
+</body>
+</html>

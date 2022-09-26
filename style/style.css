@@ -1,0 +1,438 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* MENU DI NAVIGAZIONE E HEADER */
+#menu {
+  color: #0e7575;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 40%;
+}
+
+ul {
+  list-style-type: none;
+  /* margin: 0;
+    padding: 0; */
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  /* top: 0; */
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #0e7575;
+  text-align: center;
+  padding: 14px 16px;
+  margin-left: 2px;
+  margin-right: 2px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(255, 255, 255);
+  border-width: 1px;
+  border-color: #0e7575;
+  border-style: solid;
+  color: rgb(25, 25, 25);
+}
+
+.home {
+  color: #fff;
+  font-weight: bolder;
+  border-width: 1px;
+  border-color: #fff;
+  border-style: solid;
+  background-color: #0e7575;
+}
+
+.login {
+  color: #0e7575;
+  font-weight: bolder;
+  border-width: 1px;
+  font-family: "Montserrat", sans-serif;
+  border-color: #0e7575;
+  border-style: solid;
+}
+
+#header {
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #0e7575;
+  background: #fff;
+}
+/* FINE SEZIONE*/
+
+/* CORPO E PARTE CENTRALE DEL SITO */
+
+#corpo {
+  background-color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  width: auto;
+  height: 100%;
+}
+
+#corpo h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #0e7575;
+  text-align: center;
+  background: linear-gradient(to right, #0b5c5c 0%, #129494 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.introduzione {
+  padding: 55px 55px;
+  text-align: center;
+  background-image: url(../media/immagini/bg.png);
+  background-position: bottom;
+  border: 2px solid #0e7575;
+  border-radius: 0;
+}
+
+#corpo img {
+  width: 20%;
+}
+
+#login-form img {
+  width: auto;
+}
+
+#libreriarow1 {
+  display: inline-flex;
+  align-content: center;
+  justify-content: center;
+}
+
+#libreriarow1 p {
+  display: inline-flex;
+}
+
+#libreriarow1 img {
+  width: 50%;
+}
+
+#libreriarow2 {
+  display: inline-flex;
+  align-content: center;
+  justify-content: center;
+  width: 73%;
+}
+
+#libreriarow2 p {
+  display: inline-flex;
+}
+
+#libreriarow2 img {
+  width: 50%;
+}
+
+.box {
+  padding: 20px 20px;
+  align-items: center;
+  border: 2px solid #0e7575;
+  border-radius: 10px;
+  margin: 10px 10px;
+  width: 20%;
+  height: auto;
+  background-image: url("../media/immagini/bg.png");
+}
+
+#tualibreria {
+  align-items: center;
+  text-align: center;
+  /* margin-left: 15%;
+    margin-right: 15%; */
+}
+/* FINE SEZIONE*/
+
+/* BOTTONI DI AGGIUNTA IN LIBRERIA */
+.aggiungi {
+  background-color: #0e7575;
+  font-family: "Montserrat";
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 16px 31px;
+  text-decoration: none;
+}
+.aggiungi:hover {
+  background-color: #0b5c5c;
+  font-family: "Montserrat";
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 16px 31px;
+  text-decoration: none;
+}
+.aggiungi:active {
+  position: relative;
+  top: 1px;
+}
+
+/* FINE SEZIONE */
+
+/* FOOTER E BARRA DEL PIE DI PAGINA */
+#footer {
+  background: #084545;
+  background: linear-gradient(to right, #084545 0%, #16b8b8 100%);
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 200;
+  height: 50px;
+}
+
+/* FINE SEZIONE*/
+
+/* PAGINA LOGIN, INSERIMENTO */
+
+#inserimento {
+  display: table-caption;
+  /* padding: 5px 5px; */
+  width: 100%;
+  padding: 10px 10px;
+  align-items: center;
+  text-align: center;
+}
+
+#login-form {
+  margin-top: 100px;
+  align-self: flex-start;
+  display: grid;
+  font-family: "Montserrat", sans-serif;
+  justify-items: center;
+  align-items: center;
+}
+
+.login-form-field::placeholder {
+  color: #093b3b;
+  font-family: "Montserrat", sans-serif;
+}
+
+.login-form-field {
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  border-bottom: 1px solid #0b5c5c;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  outline: none;
+  padding: 0px 0px 5px 5px;
+}
+
+#login-form-submit {
+  width: 9%;
+  padding: 7px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: #0b5c5c;
+  cursor: pointer;
+  outline: none;
+}
+
+button {
+  color: #ffffff;
+  background-color: #0b5c5c;
+  font-size: 13px;
+  border: 1px solid #0b5c5c;
+  padding: 15px 50px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+button:hover {
+  color: #0b5c5c;
+  background-color: #ffffff;
+}
+
+#buttonrem {
+  color: #ffffff;
+  background-color: #0b5c5c;
+  font-size: 13px;
+  border: 1px solid #0b5c5c;
+  border-radius: 500px;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+#buttonrem:hover {
+  color: #fff;
+  font-size: 20px;
+  background-color: #863434;
+}
+
+/* BARRA DI SCROLLING */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #0b5c5c #dfe9eb;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  width: 10px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background-color: #dfe9eb;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #b8c0c2;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #b8c0c2;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  background-color: #0b5c5c;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #118f8f;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #0b5c5c;
+}
+/* BARRA DI SCROLLING */
+
+/* TOOLTIP DELLA PAGINA LOGIN */
+[data-tooltip] {
+  position: relative;
+  cursor: pointer;
+}
+[data-tooltip]:before,
+[data-tooltip]:after {
+  line-height: 1;
+  font-size: 0.9em;
+  pointer-events: none;
+  position: absolute;
+  box-sizing: border-box;
+  display: none;
+  opacity: 0;
+}
+[data-tooltip]:before {
+  content: "";
+  border: 5px solid transparent;
+  z-index: 100;
+}
+[data-tooltip]:after {
+  content: attr(data-tooltip);
+  text-align: center;
+  min-width: 3em;
+  max-width: 21em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 6px 9px;
+  border-radius: 0px;
+  background: #0b5c5c;
+  color: #ffffff;
+  z-index: 99;
+}
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  display: block;
+  opacity: 1;
+}
+[data-tooltip]:not([data-flow])::before,
+[data-tooltip][data-flow="top"]::before {
+  bottom: 100%;
+  border-bottom-width: 0;
+  border-top-color: #0b5c5c;
+}
+[data-tooltip]:not([data-flow])::after,
+[data-tooltip][data-flow="top"]::after {
+  bottom: calc(100% + 5px);
+}
+[data-tooltip]:not([data-flow])::before,
+[tooltip]:not([data-flow])::after,
+[data-tooltip][data-flow="top"]::before,
+[data-tooltip][data-flow="top"]::after {
+  left: 50%;
+  -webkit-transform: translate(-50%, -4px);
+  transform: translate(-50%, -4px);
+}
+[data-tooltip][data-flow="bottom"]::before {
+  top: 100%;
+  border-top-width: 0;
+  border-bottom-color: #0b5c5c;
+}
+[data-tooltip][data-flow="bottom"]::after {
+  top: calc(100% + 5px);
+}
+[data-tooltip][data-flow="bottom"]::before,
+[data-tooltip][data-flow="bottom"]::after {
+  left: 50%;
+  -webkit-transform: translate(-50%, 8px);
+  transform: translate(-50%, 8px);
+}
+[data-tooltip][data-flow="left"]::before {
+  top: 50%;
+  border-right-width: 0;
+  border-left-color: #0b5c5c;
+  left: calc(0em - 5px);
+  -webkit-transform: translate(-8px, -50%);
+  transform: translate(-8px, -50%);
+}
+[data-tooltip][data-flow="left"]::after {
+  top: 50%;
+  right: calc(100% + 5px);
+  -webkit-transform: translate(-8px, -50%);
+  transform: translate(-8px, -50%);
+}
+[data-tooltip][data-flow="right"]::before {
+  top: 50%;
+  border-left-width: 0;
+  border-right-color: #0b5c5c;
+  right: calc(0em - 5px);
+  -webkit-transform: translate(8px, -50%);
+  transform: translate(8px, -50%);
+}
+[data-tooltip][data-flow="right"]::after {
+  top: 50%;
+  left: calc(100% + 5px);
+  -webkit-transform: translate(8px, -50%);
+  transform: translate(8px, -50%);
+}
+[data-tooltip=""]::after,
+[data-tooltip=""]::before {
+  display: none !important;
+}
+/* TOOLTIP DELLA PAGINA LOGIN */
+
+/* CSS RIGUARDO ALLE ULTIME AGGIUNTE CON LOCALSTORAGE E TESTI VARI */
+#headertext {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#nomescelto {
+  font-weight: bold;
+  color: #0b5c5c;
+  font-family: "Montserrat", sans-serif;
+}
+
+#scarica {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 7px;
+}

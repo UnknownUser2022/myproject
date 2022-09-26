@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>TheLibreria.it | La tua libreria online</title>
+    <!-- FILE CSS -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="media/immagini/favicon.png">
+    <script type="text/javascript" src="funzioni.js"></script>
+</head>
+
+<body style="padding: 0; margin:0">
+    <div id="corpo">
+        <div id="header" style="position:sticky; top:0;">
+            <img src="media/immagini/logo.png">
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="login" href="#">Collezione</a></li>
+                <li><a href="#">Contatti</a></li>
+                <li><a id ="variabile" class="home" href="index.html">Esci</a></li>
+            </ul>
+        </div>
+        <div id="headertext"><p>Bentornato&nbsp&nbsp<p id="nomescelto"></div>
+    
+        <!-- <h1>Benvenuto su TheLibreria.it</h1> -->
+        <p class="introduzione">
+            <img src="media/immagini/mondadori.png">
+            <br>
+            <br>
+            Benvenuto, all'interno della tua collezione di libri, quì potrai leggere i libri selezionati e rimuovere quelli già letti
+            <br>
+            Ora puoi iniziare a sfogliare i libri che hai precedentemente aggiunto alla tua collezione
+        </p>
+        <div class="mialibreria">
+            <h1>La <b>tua</b> collezione</h1>
+            <center><div class="LaMiaLibreria">
+                <tbody>
+                <div id="inserimento">
+                <label>Nome Libro <input type="text" id="nomebs" value="" disabled></label>
+                <label>Editore <input type="text" id="edt" value="" disabled></label>
+                <button type="button" name="vedi" id="scarica">Scarica</button>
+                <button id="buttonrem">-</button>
+                <br>
+                <br>
+                <label>Nome Libro <input type="text" id="nome" value="" disabled></label>
+                <label>Editore <input type="text" id="edt" value="" disabled></label>
+                <button type="button" name="vedi" id="scarica">Scarica</button>
+                <button id="buttonrem">-</button>
+                <br>
+                <br>
+                <label>Nome Libro <input type="text" id="nome" value="" disabled></label>
+                <label>Editore <input type="text" id="edt" value="" disabled></label>
+                <button type="button" name="vedi" id="scarica">Scarica</button>
+                <button id="buttonrem">-</button>
+                <br>
+                <br>
+                <label>Nome Libro <input type="text" id="nome" value="" disabled></label>
+                <label>Editore <input type="text" id="edt" value="" disabled></label>
+                <button type="button" name="vedi" id="scarica">Scarica</button>
+                <button id="buttonrem">-</button>
+                <br>
+                <br>
+                </tbody>
+            </div>
+            <br>
+            <br>
+            <br>
+            <a href="#" type="submit" id="pulisci" class="aggiungi">SVUOTA LA COLLEZIONE</a></center>
+                <!-- <div class="box">
+                    <img src="media/libri/girlinshow.jpg">
+                    <h1>Girl in show</h1>
+                    <p>Danya Kukafka</p>
+                    <br>
+                    <a href="#" class="aggiungi" onClick="alert('Hai aggiunto GIRL IN SHOW alla libreria!');">-  RIMUOVI</a>
+                </div>
+                <div class="box">
+                    <img src="media/libri/succede.jpg">
+                    <h1>Succede</h1>
+                    <p>Sofia Viscardi</p>
+                    <br>
+                    <a href="#" class="aggiungi" onClick="alert('Hai aggiunto SUCCEDE alla libreria!');">-  RIMUOVI</a>
+                </div>
+                <div class="box">
+                    <img src="media/libri/brooks.jpg">
+                    <h1>Il potere della magia</h1>
+                    <p>Terry Brooks</p>
+                    <br>
+                    <a href="#" class="aggiungi" onClick="alert('Hai aggiunto IL POTERE DELLA MAGIA alla libreria!');">-  RIMUOVI</a>
+                </div>
+                <div class="box">
+                    <img src="media/libri/imedici.jpg">
+                    <h1>I medici</h1>
+                    <p>Matteo Strukul</p>
+                    <br>
+                    <a href="#" class="aggiungi" onClick="alert('Hai aggiunto I MEDICI alla libreria!');">-  RIMUOVI</a>
+                </div> -->
+            </div>
+<!-- 
+            <div id="libreriarow2">
+                <div class="box">
+                    <img src="media/libri/exvoto.jpg">
+                    <h1>Ex Voto</h1>
+                    <p>Marcello Fois</p>
+                    <br>
+                    <a href="#" class="aggiungi" onClick="alert('Hai aggiunto EX VOTO alla libreria!');">-  RIMUOVI</a>
+                </div>
+                <div class="box">
+                    <img src="media/libri/ilcecchinopaziente.jpg">
+                    <h1>Il cecchino paziente</h1>
+                    <p>Arturo Pérez-Reverte</p>
+                    <br>
+                    <a href="#" class="aggiungi" onClick="alert('Hai aggiunto IL CECCHINO PAZIENTE alla libreria!');">-  RIMUOVI</a>
+                </div>
+                <div class="box">
+                    <img src="media/libri/commandauthority.jpg">
+                    <h1>Command Authority</h1>
+                    <p>Mark Greaney</p>
+                    <br>
+                    <a href="#" class="aggiungi" onClick="alert('Hai aggiunto COMMAND AUTHORITY alla libreria!');">-  RIMUOVI</a>
+                    
+                </div>
+                <div class="box">
+                    <img src="media/libri/iosonodio.jpg">
+                    <h1>Io sono dio</h1>
+                    <p>Giorgio Faletti</p>
+                    <br>
+                    <a href="#" class="aggiungi" onClick="alert('Hai aggiunto IO SONO DIO alla libreria!');">-  RIMUOVI</a>
+                </div>
+            </div> -->
+        </div>
+
+
+
+
+
+
+        <!-- FOOTER | PIE DI PAGINA E COPYRIGHT DISCLAIMER-->
+        <div id="footer">
+            <p style="text-align: center; padding-top: 15px; font-family: 'Montserrat';">COPYRIGHT &#169 2022 | <a href="#" style="text-decoration: none; color: #fff; font-weight: bolder;">TheLibreria.it</a> | All rights reserved</p>
+        </div>
+    </div>
+</body>
+</html>

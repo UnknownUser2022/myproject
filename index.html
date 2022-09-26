@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>TheLibreria.it | La tua libreria online</title>
+    <!-- FILE CSS -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="media/immagini/favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <meta name="description" content="La tua libreria a portata di mano"> 
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="funzioni.js"></script>
+</head>
+
+<body style="padding: 0; margin:0">
+
+    
+    <div id="corpo">
+        <div id="header" style="position:sticky; top:0;">
+            <img src="media/immagini/logo.png">
+            <ul id="menu">
+                <li><a class="home" href="index.html">Home</a></li>
+                <li><a href="libreria.html">Collezione</a></li>
+                <li><a href="#">Contatti</a></li>
+                <li><a id ="variabile" class="login" href="login.html">Profilo</a></li>
+            </ul>
+        </div>
+        <div id="headertext"><p>Bentornato&nbsp&nbsp<p id="nomescelto"><b>NESSUN UTENTE</b></div>
+    
+        <!-- <h1>Benvenuto su TheLibreria.it</h1> -->
+        <p class="introduzione">
+            <img src="media/immagini/mondadori.png">
+            <br>
+            <br>
+            Ti diamo il benvenuto all'interno del nostro portale digitale per la gestione della libreria personale.
+            <br>
+            All'interno di questa pagina avrai la possibilità di aggiungere i libri disponibili nella tua libreria.
+        </p>
+        <div id="tualibreria">
+            <h1>Libri <b>disponibili</b></h1>
+            <div id="libreriarow1">
+                <div class="box">
+                    <img src="media/libri/girlinshow.jpg">
+                    <h1>Girl in show</h1>
+                    <p>Danya Kukafka</p>
+                    <br>
+                    <a href="#" class="aggiungi" onClick="alert('Hai aggiunto GIRL IN SHOW alla libreria!');" id="gis">+  AGGIUNGI</a>
+                </div>
+                <div class="box">
+                    <img src="media/libri/succede.jpg">
+                    <h1>Succede</h1>
+                    <p>Sofia Viscardi</p>
+                    <br>
+                    <a href="#" class="aggiungi" onClick="alert('Hai aggiunto SUCCEDE alla libreria!');" id="succede">+  AGGIUNGI</a>
+                </div>
+                <div class="box">
+                    <img src="media/libri/brooks.jpg">
+                    <h1>Il potere della magia</h1>
+                    <p>Terry Brooks</p>
+                    <br>
+                    <a href="#" class="aggiungi" onClick="alert('Hai aggiunto IL POTERE DELLA MAGIA alla libreria!');" id="pdm">+  AGGIUNGI</a>
+                </div>
+                <div class="box">
+                    <img src="media/libri/imedici.jpg">
+                    <h1>I medici</h1>
+                    <p>Matteo Strukul</p>
+                    <br>
+                    <a href="#" class="aggiungi" onClick="alert('Hai aggiunto I MEDICI alla libreria!');" id="imedici">+  AGGIUNGI</a>
+                </div>
+            </div>
+
+            <div id="libreriarow2">
+                <div class="box">
+                    <img src="media/libri/exvoto.jpg">
+                    <h1>Ex Voto</h1>
+                    <p>Marcello Fois</p>
+                    <br>
+                    <a href="#" class="aggiungi" onClick="alert('Hai aggiunto EX VOTO alla libreria!');" id="exvoto">+  AGGIUNGI</a>
+                </div>
+                <div class="box">
+                    <img src="media/libri/ilcecchinopaziente.jpg">
+                    <h1>Il cecchino paziente</h1>
+                    <p>Arturo Pérez-Reverte</p>
+                    <br>
+                    <a href="#" class="aggiungi" onClick="alert('Hai aggiunto IL CECCHINO PAZIENTE alla libreria!');" id="icp">+  AGGIUNGI</a>
+                </div>
+                <div class="box">
+                    <img src="media/libri/commandauthority.jpg">
+                    <h1>Command Authority</h1>
+                    <p>Mark Greaney</p>
+                    <br>
+                    <a href="#" class="aggiungi" onClick="alert('Hai aggiunto COMMAND AUTHORITY alla libreria!');" id="ca">+  AGGIUNGI</a>
+                    
+                </div>
+                <div class="box">
+                    <img src="media/libri/iosonodio.jpg">
+                    <h1>Io sono dio</h1>
+                    <p>Giorgio Faletti</p>
+                    <br>
+                    <a href="#" class="aggiungi" onClick="alert('Hai aggiunto IO SONO DIO alla libreria!');" id="isd">+  AGGIUNGI</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <label for="text">Come ti chiami?</label>
+            <input type="text" class="form-control inputBox" id="text" name="text">
+
+        <button id="crea">IMPOSTA</button>
+        <br>
+        <br>
+        
+        <button id="pulisci">PULISCI</button>
+        <button id="puliscitutto">PULISCI TUTTO</button> -->
+
+        <!-- <script>
+            $(document).ready(function(){
+            if(localStorage.getItem("inputvalue")){
+            $('.login').text(localStorage.getItem("inputvalue"));
+            }
+            
+            $('#crea').on('click', function() {
+            localStorage.setItem("inputvalue", $('#text').val());
+            $('.login').text(localStorage.getItem("inputvalue"));
+            });
+
+            $('#pulisci').on('click', function() {
+                 localStorage.removeItem("inputvalue");
+            });
+
+            $('#puliscitutto').on('click', function() {
+                localStorage.clear();
+            });
+            
+            
+        });
+        </script> -->
+
+
+        <!-- FOOTER | PIE DI PAGINA E COPYRIGHT DISCLAIMER-->
+        <div id="footer">
+            <p style="text-align: center; padding-top: 15px; font-family: 'Montserrat';">COPYRIGHT &#169 2022 | <a href="#" style="text-decoration: none; color: #fff; font-weight: bolder;">TheLibreria.it</a> | All rights reserved</p>
+        </div>
+    </div>
+</body>
+</html>
