@@ -2,13 +2,11 @@
 $(document).ready(function () {
   if (localStorage.getItem("inputvalue")) {
     $("#nomescelto").text(localStorage.getItem("inputvalue"));
-    //$('.home').text(localStorage.getItem("inputvalue"));
   }
 
   $("#login-form-submit").on("click", function () {
     localStorage.setItem("inputvalue", $("#username-field").val());
     $("#nomescelto").text(localStorage.getItem("inputvalue"));
-    //$('.home').text(localStorage.getItem("inputvalue"));
   });
 
   $("#pulisci").on("click", function () {
@@ -18,4 +16,5 @@ $(document).ready(function () {
   $("#puliscitutto").on("click", function () {
     localStorage.clear();
   });
+
 });
